@@ -3,10 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>USDAR Logo</title>
+  <title>USDAR Logos</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2em;
+      background: #f9f9f9;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2em;
+    }
+    .logos {
+      display: flex;
+      gap: 2em;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .logo-item {
+      text-align: center;
+    }
+    .logo-item img {
+      max-width: 300px;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>USDAR Logo</h1>
-  <img src="usdar-logo.svg" alt="USDAR Logo" style="max-width: 300px; height: auto;" />
+  <h1>USDAR Logos</h1>
+  <div class="logos">
+    <div class="logo-item">
+      <h2>SVG Version</h2>
+      <img src="usdar-logo.svg" alt="USDAR Logo SVG" />
+    </div>
+    <div class="logo-item">
+      <h2>PNG Version</h2>
+      <img src="usdar-logo.png" alt="USDAR Logo PNG" />
+    </div>
+  </div>
 </body>
 </html>
